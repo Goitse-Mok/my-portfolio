@@ -104,7 +104,7 @@ export default function Home() {
               href="/contact"
               className="px-10 py-4 bg-white text-cyan-600 text-xl font-bold rounded-full shadow-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105"
             >
-              Contact Me Today!
+              Contact Me Today.Thanks!
             </Link>
           </div>
         </section>
