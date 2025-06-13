@@ -1,5 +1,5 @@
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Link from 'next/link';
 
 export default function Contact() {
@@ -15,7 +15,7 @@ export default function Contact() {
           </h2>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-8 text-center">
-            I'm always open to new opportunities, collaborations, or just a friendly chat!
+            I&apos;m always open to new opportunities, collaborations, or just a friendly chat!
             Feel free to reach out using the options below.
           </p>
 
