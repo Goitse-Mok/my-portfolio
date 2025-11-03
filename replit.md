@@ -4,6 +4,19 @@
 
 This is a personal portfolio website for Goitsemodimo Gaone Mokgethi, a junior software developer. The site showcases professional information, technical skills, projects, and contact details. Built with modern web technologies, it serves as a digital resume and professional online presence.
 
+## Recent Changes (November 3, 2025)
+
+**Migration to Replit**: Successfully migrated project from Vercel to Replit environment
+- Updated package.json scripts to bind to 0.0.0.0:5000 for Replit compatibility
+- Configured Next.js development workflow
+- Set up deployment configuration for autoscale
+
+**Professional Photo Integration**: Added professional graduation photo to enhance portfolio presentation
+- Home page hero section: Two-column responsive layout with circular profile photo (cyan ring border)
+- About page: Centered header with circular profile photo
+- All images optimized using Next.js Image component with proper `fill`, `sizes`, and `priority` props
+- Photo file: `/public/profile-photo.jpg`
+
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
@@ -76,7 +89,8 @@ Preferred communication style: Simple, everyday language.
 ### Asset Management
 **Static Assets**:
 - Logo stored in `/public/logo2.png`
-- Images optimized via Next.js Image component with specified dimensions
+- Professional graduation photo: `/public/profile-photo.jpg` (displayed on home and about pages)
+- Images optimized via Next.js Image component with specified dimensions and sizes prop
 - SVG icons embedded inline for contact links
 
 ### Accessibility & UX Patterns
@@ -106,7 +120,9 @@ Preferred communication style: Simple, everyday language.
 - **Google Fonts**: Geist and Geist Mono font families loaded via `next/font/google`
 
 ### Hosting & Deployment
-- **Deployment Target**: Vercel Platform (as indicated in README)
+- **Deployment Target**: Replit (migrated from Vercel on November 3, 2025)
+- **Deployment Type**: Autoscale deployment for optimal performance
+- **Build Command**: `npm run build`
 - **Build Output**: Optimized static/server-side rendered pages
 
 ### No Current Database or Backend
