@@ -8,15 +8,16 @@ export default function Navbar() {
   const pathname = usePathname(); // Get the current path
 
   return (
-    <nav className="bg-[#054160] text-white px-8 py-4 flex justify-between items-center sticky top-0 z-50 shadow-md">
+    <nav className="bg-gradient-to-r from-pink-600 via-purple-600 to-fuchsia-600 text-white px-8 py-4 flex justify-between items-center sticky top-0 z-50 shadow-lg">
       {/* Wrapper div for the circular ring effect */}
-      <div className="relative flex items-center justify-center w-20 h-20 rounded-full bg-transparent ring-2 ring-cyan-300 ring-offset-2 ring-offset-[#054160] transition-all duration-300 hover:ring-offset-4 overflow-hidden">
+      <div className="relative flex items-center justify-center w-20 h-20 rounded-full bg-white/10 backdrop-blur-sm ring-2 ring-pink-300 ring-offset-2 ring-offset-purple-600 transition-all duration-300 hover:ring-offset-4 hover:ring-pink-200 overflow-hidden animate-tilt-3d">
         <Image
           src="/logo2.png" // Make sure your logo2.png is in the public folder
           alt="Goitsemodimo Company Logo"
           width={100} // Retaining original width to ensure logo visibility
           height={30}  // Retaining original height
           className="object-contain" // Ensures the entire image fits within its bounds
+          priority
         />
       </div>
       <div className="flex space-x-8">
@@ -24,8 +25,8 @@ export default function Navbar() {
         <Link
           href="/"
           className={`
-            ${pathname === '/' ? 'font-bold text-cyan-200' : 'text-white'}
-            hover:text-cyan-300 transition-colors duration-300 text-lg
+            ${pathname === '/' ? 'font-bold text-pink-200 underline decoration-2 underline-offset-4' : 'text-white'}
+            hover:text-pink-200 hover:scale-110 transition-all duration-300 text-lg
           `}
         >
           Home
@@ -33,8 +34,8 @@ export default function Navbar() {
         <Link
           href="/about"
           className={`
-            ${pathname === '/about' ? 'font-bold text-cyan-200' : 'text-white'}
-            hover:text-cyan-300 transition-colors duration-300 text-lg
+            ${pathname === '/about' ? 'font-bold text-pink-200 underline decoration-2 underline-offset-4' : 'text-white'}
+            hover:text-pink-200 hover:scale-110 transition-all duration-300 text-lg
           `}
         >
           About
@@ -42,8 +43,8 @@ export default function Navbar() {
         <Link
           href="/projects"
           className={`
-            ${pathname === '/projects' ? 'font-bold text-cyan-200' : 'text-white'}
-            hover:text-cyan-300 transition-colors duration-300 text-lg
+            ${pathname === '/projects' ? 'font-bold text-pink-200 underline decoration-2 underline-offset-4' : 'text-white'}
+            hover:text-pink-200 hover:scale-110 transition-all duration-300 text-lg
           `}
         >
           Projects
@@ -51,8 +52,8 @@ export default function Navbar() {
         <Link
           href="/contact"
           className={`
-            ${pathname === '/contact' ? 'font-bold text-cyan-200' : 'text-white'}
-            hover:text-cyan-300 transition-colors duration-300 text-lg
+            ${pathname === '/contact' ? 'font-bold text-pink-200 underline decoration-2 underline-offset-4' : 'text-white'}
+            hover:text-pink-200 hover:scale-110 transition-all duration-300 text-lg
           `}
         >
           Contact
