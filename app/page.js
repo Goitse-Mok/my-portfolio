@@ -21,8 +21,8 @@ export default function Home() {
         <section className="max-w-6xl mx-auto my-12 p-8 md:p-12 bg-white rounded-2xl shadow-2xl card-hover animate-scale-in">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Profile Photo */}
-            <div className="flex justify-center md:order-1">
-              <div className="relative w-full max-w-sm aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl ring-4 ring-cyan-500 ring-offset-8 ring-offset-white transform hover:scale-105 transition-transform duration-300 animate-float">
+            <div className="flex justify-center md:order-1 animate-slide-in-left">
+              <div className="relative w-full max-w-sm aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl ring-4 ring-cyan-500 ring-offset-8 ring-offset-white transform hover:scale-105 transition-transform duration-300 animate-float pulse-glow">
                 <Image
                   src="/profile-photo.jpg"
                   alt="Goitsemodimo Gaone Mokgethi - Graduate Photo"
@@ -56,16 +56,18 @@ export default function Home() {
                 A motivated and results-driven developer with a strong foundation in frontend and backend development,
                 adept at building responsive and user-focused applications.
               </p>
-              <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4 animate-fade-in-up delay-300">
-                <Link href="/projects" className="px-8 py-3 bg-gradient-to-r from-cyan-500 to-cyan-600 text-white text-base font-semibold rounded-full shadow-lg hover:shadow-xl hover:from-cyan-600 hover:to-cyan-700 transition-all duration-300 transform hover:scale-105">
-                  View My Projects
+              <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4 animate-slide-in-right delay-400">
+                <Link href="/projects" className="relative px-8 py-3 bg-gradient-to-r from-cyan-500 to-cyan-600 text-white text-base font-semibold rounded-full shadow-lg hover:shadow-2xl hover:from-cyan-600 hover:to-cyan-700 transition-all duration-300 transform hover:scale-110 overflow-hidden group">
+                  <span className="relative z-10">View My Projects</span>
+                  <span className="absolute inset-0 shimmer-effect opacity-0 group-hover:opacity-100"></span>
                 </Link>
-                <Link href="/contact" className="px-8 py-3 border-2 border-cyan-500 text-cyan-600 text-base font-semibold rounded-full shadow-lg hover:bg-cyan-500 hover:text-white transition-all duration-300 transform hover:scale-105">
-                  Get In Touch
+                <Link href="/contact" className="relative px-8 py-3 border-2 border-cyan-500 text-cyan-600 text-base font-semibold rounded-full shadow-lg hover:bg-cyan-500 hover:text-white transition-all duration-300 transform hover:scale-110 overflow-hidden group">
+                  <span className="relative z-10">Get In Touch</span>
+                  <span className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-cyan-600 opacity-0 group-hover:opacity-100 transition-opacity"></span>
                 </Link>
                 <button
                   onClick={openModal}
-                  className="px-8 py-3 border-2 border-gray-300 text-gray-700 text-base font-semibold rounded-full shadow-lg hover:border-cyan-500 hover:text-cyan-600 transition-all duration-300 transform hover:scale-105"
+                  className="px-8 py-3 border-2 border-gray-300 text-gray-700 text-base font-semibold rounded-full shadow-lg hover:border-cyan-500 hover:text-cyan-600 transition-all duration-300 transform hover:scale-110"
                 >
                   Quick Connect
                 </button>
@@ -101,33 +103,33 @@ export default function Home() {
             <span className="gradient-text">My Expertise</span>
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="bg-gradient-to-br from-cyan-50 to-white p-6 rounded-xl shadow-md border-2 border-cyan-100 hover:border-cyan-300 card-hover group">
-              <div className="text-3xl mb-3">💻</div>
+            <div className="bg-gradient-to-br from-cyan-50 to-white p-6 rounded-xl shadow-md border-2 border-cyan-100 hover:border-cyan-300 card-hover group animate-scale-in delay-100">
+              <div className="text-3xl mb-3 animate-bounce-slow">💻</div>
               <h3 className="font-bold text-cyan-700 text-xl mb-3 group-hover:text-cyan-600 transition-colors">Frontend</h3>
               <p className="text-gray-600 text-sm leading-relaxed">HTML, CSS, Tailwind CSS, JavaScript, React.js, Next.js</p>
             </div>
-            <div className="bg-gradient-to-br from-cyan-50 to-white p-6 rounded-xl shadow-md border-2 border-cyan-100 hover:border-cyan-300 card-hover group">
-              <div className="text-3xl mb-3">⚙️</div>
+            <div className="bg-gradient-to-br from-cyan-50 to-white p-6 rounded-xl shadow-md border-2 border-cyan-100 hover:border-cyan-300 card-hover group animate-scale-in delay-200">
+              <div className="text-3xl mb-3 animate-bounce-slow">⚙️</div>
               <h3 className="font-bold text-cyan-700 text-xl mb-3 group-hover:text-cyan-600 transition-colors">Backend</h3>
               <p className="text-gray-600 text-sm leading-relaxed">FastAPI (Python), Node.js, PHP, Java</p>
             </div>
-            <div className="bg-gradient-to-br from-cyan-50 to-white p-6 rounded-xl shadow-md border-2 border-cyan-100 hover:border-cyan-300 card-hover group">
-              <div className="text-3xl mb-3">🗄️</div>
+            <div className="bg-gradient-to-br from-cyan-50 to-white p-6 rounded-xl shadow-md border-2 border-cyan-100 hover:border-cyan-300 card-hover group animate-scale-in delay-300">
+              <div className="text-3xl mb-3 animate-bounce-slow">🗄️</div>
               <h3 className="font-bold text-cyan-700 text-xl mb-3 group-hover:text-cyan-600 transition-colors">Databases</h3>
               <p className="text-gray-600 text-sm leading-relaxed">MySQL</p>
             </div>
-            <div className="bg-gradient-to-br from-cyan-50 to-white p-6 rounded-xl shadow-md border-2 border-cyan-100 hover:border-cyan-300 card-hover group">
-              <div className="text-3xl mb-3">🔀</div>
+            <div className="bg-gradient-to-br from-cyan-50 to-white p-6 rounded-xl shadow-md border-2 border-cyan-100 hover:border-cyan-300 card-hover group animate-scale-in delay-400">
+              <div className="text-3xl mb-3 animate-bounce-slow">🔀</div>
               <h3 className="font-bold text-cyan-700 text-xl mb-3 group-hover:text-cyan-600 transition-colors">Version Control</h3>
               <p className="text-gray-600 text-sm leading-relaxed">Git & GitHub</p>
             </div>
-            <div className="bg-gradient-to-br from-cyan-50 to-white p-6 rounded-xl shadow-md border-2 border-cyan-100 hover:border-cyan-300 card-hover group">
-              <div className="text-3xl mb-3">🛠️</div>
+            <div className="bg-gradient-to-br from-cyan-50 to-white p-6 rounded-xl shadow-md border-2 border-cyan-100 hover:border-cyan-300 card-hover group animate-scale-in delay-500">
+              <div className="text-3xl mb-3 animate-bounce-slow">🛠️</div>
               <h3 className="font-bold text-cyan-700 text-xl mb-3 group-hover:text-cyan-600 transition-colors">Tools</h3>
               <p className="text-gray-600 text-sm leading-relaxed">VS Code, Microsoft Office</p>
             </div>
-            <div className="bg-gradient-to-br from-cyan-50 to-white p-6 rounded-xl shadow-md border-2 border-cyan-100 hover:border-cyan-300 card-hover group">
-              <div className="text-3xl mb-3">🎯</div>
+            <div className="bg-gradient-to-br from-cyan-50 to-white p-6 rounded-xl shadow-md border-2 border-cyan-100 hover:border-cyan-300 card-hover group animate-scale-in delay-600">
+              <div className="text-3xl mb-3 animate-bounce-slow">🎯</div>
               <h3 className="font-bold text-cyan-700 text-xl mb-3 group-hover:text-cyan-600 transition-colors">Development Practices</h3>
               <p className="text-gray-600 text-sm leading-relaxed">Responsive & User-Focused Applications</p>
             </div>
