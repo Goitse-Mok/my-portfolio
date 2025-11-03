@@ -7,27 +7,28 @@ export default function About() {
   return (
     <>
       <Navbar />
-      <main className="bg-gray-50 py-12 px-6 sm:px-10 min-h-screen">
-        <section className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8 space-y-8">
+      <main className="bg-gradient-to-br from-gray-50 via-cyan-50/30 to-gray-50 py-12 px-6 sm:px-10 min-h-screen">
+        <section className="max-w-5xl mx-auto bg-white rounded-2xl shadow-2xl p-8 md:p-12 space-y-10">
 
           {/* Profile Photo Header */}
           <div className="flex justify-center mb-8">
-            <div className="relative w-48 h-48 sm:w-56 sm:h-56 rounded-full overflow-hidden shadow-2xl ring-4 ring-cyan-500 ring-offset-4">
+            <div className="relative w-64 h-80 sm:w-72 sm:h-96 rounded-2xl overflow-hidden shadow-2xl ring-4 ring-cyan-500 ring-offset-8 ring-offset-white transform hover:scale-105 transition-transform duration-300">
               <Image
                 src="/profile-photo.jpg"
                 alt="Goitsemodimo Gaone Mokgethi"
                 fill
-                sizes="(max-width: 640px) 192px, 224px"
+                sizes="(max-width: 640px) 256px, 288px"
                 className="object-cover"
                 priority
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-cyan-900/20 to-transparent"></div>
             </div>
           </div>
 
           {/* About Me Introduction */}
           <div>
-            <h2 className="text-4xl sm:text-5xl font-extrabold text-cyan-600 leading-tight mb-6 text-center">
-              About Me
+            <h2 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-6 text-center">
+              <span className="gradient-text">About Me</span>
             </h2>
             <p className="text-base text-gray-700 leading-relaxed mb-4">
               I am a motivated and results-driven junior software developer currently working at{' '}
@@ -46,10 +47,12 @@ export default function About() {
           </div>
 
           {/* Professional Summary */}
-          <div>
-            <h3 className="text-2xl sm:text-3xl font-bold text-cyan-600 mb-4">Professional Summary</h3>
-            <p className="text-base text-gray-700 leading-relaxed">
-              Selected for the upcoming BTC Graduate Tech Cohort 2025, demonstrating dedication to continuous growth.
+          <div className="bg-gradient-to-br from-cyan-50 to-white p-6 md:p-8 rounded-xl border-l-4 border-cyan-500 shadow-md">
+            <h3 className="text-2xl sm:text-3xl font-bold mb-4">
+              <span className="gradient-text">Professional Summary</span>
+            </h3>
+            <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+              Selected for the upcoming <span className="font-semibold text-cyan-600">BTC Graduate Tech Cohort 2025</span>, demonstrating dedication to continuous growth.
               I am highly adaptable, team-oriented, and eager to contribute meaningfully in dynamic ICT and regulatory environments.
             </p>
           </div>
@@ -87,25 +90,60 @@ export default function About() {
 
           {/* Work Experience */}
           <div>
-            <h3 className="text-2xl sm:text-3xl font-bold text-cyan-600 mb-4">Work Experience</h3>
+            <h3 className="text-2xl sm:text-3xl font-bold mb-6 text-center">
+              <span className="gradient-text">Work Experience</span>
+            </h3>
             <div className="space-y-6">
-              <div className="bg-gray-100 p-4 rounded-md shadow-sm">
-                <h4 className="font-semibold text-cyan-700 text-lg">Junior Software Developer</h4>
-                <p className="text-gray-800 text-base">Techno Fairy — July 2024 to Present</p>
-                <ul className="list-disc list-inside text-gray-600 mt-2 space-y-1 text-sm">
-                  <li>Contribute to full-stack software development using FastAPI, Next.js, and MySQL</li>
-                  <li>Collaborate on cross-functional teams for project delivery and UI/UX updates</li>
-                  <li>Assist in integration and maintenance of client-facing digital services</li>
-                  <li>Perform troubleshooting, testing, and deployment of new features</li>
+              <div className="bg-gradient-to-br from-cyan-50 to-white p-6 rounded-xl shadow-md border-l-4 border-cyan-500 card-hover">
+                <div className="flex items-start gap-3 mb-3">
+                  <div className="text-2xl">💼</div>
+                  <div>
+                    <h4 className="font-bold text-cyan-700 text-xl">Junior Software Developer</h4>
+                    <p className="text-gray-700 text-base font-semibold">Techno Fairy</p>
+                    <p className="text-gray-500 text-sm">July 2024 to Present</p>
+                  </div>
+                </div>
+                <ul className="space-y-2 text-gray-600 text-sm ml-11">
+                  <li className="flex items-start">
+                    <span className="text-cyan-500 mr-2 mt-1">✓</span>
+                    <span>Contribute to full-stack software development using FastAPI, Next.js, and MySQL</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-cyan-500 mr-2 mt-1">✓</span>
+                    <span>Collaborate on cross-functional teams for project delivery and UI/UX updates</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-cyan-500 mr-2 mt-1">✓</span>
+                    <span>Assist in integration and maintenance of client-facing digital services</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-cyan-500 mr-2 mt-1">✓</span>
+                    <span>Perform troubleshooting, testing, and deployment of new features</span>
+                  </li>
                 </ul>
               </div>
-              <div className="bg-gray-100 p-4 rounded-md shadow-sm">
-                <h4 className="font-semibold text-cyan-700 text-lg">IT Officer Attaché</h4>
-                <p className="text-gray-800 text-base">Shashe River School — June to July 2022</p>
-                <ul className="list-disc list-inside text-gray-600 mt-2 space-y-1 text-sm">
-                  <li>Provided basic IT support for students and staff</li>
-                  <li>Maintained hardware and assisted with software installations</li>
-                  <li>Supported digital learning tools and platforms</li>
+              <div className="bg-gradient-to-br from-gray-50 to-white p-6 rounded-xl shadow-md border-l-4 border-gray-400 card-hover">
+                <div className="flex items-start gap-3 mb-3">
+                  <div className="text-2xl">🖥️</div>
+                  <div>
+                    <h4 className="font-bold text-gray-700 text-xl">IT Officer Attaché</h4>
+                    <p className="text-gray-700 text-base font-semibold">Shashe River School</p>
+                    <p className="text-gray-500 text-sm">June to July 2022</p>
+                  </div>
+                </div>
+                <ul className="space-y-2 text-gray-600 text-sm ml-11">
+                  <li className="flex items-start">
+                    <span className="text-gray-500 mr-2 mt-1">✓</span>
+                    <span>Provided basic IT support for students and staff</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-gray-500 mr-2 mt-1">✓</span>
+                    <span>Maintained hardware and assisted with software installations</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-gray-500 mr-2 mt-1">✓</span>
+                    <span>Supported digital learning tools and platforms</span>
+                  </li>
                 </ul>
               </div>
             </div>
