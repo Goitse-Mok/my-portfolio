@@ -3,6 +3,7 @@
 
 import { useState } from 'react'; // Import useState for modal
 import Link from 'next/link';
+import Image from 'next/image';
 import Navbar from './components/Navbar'; // Corrected path
 import Footer from './components/Footer'; // Corrected path
 
@@ -16,34 +17,50 @@ export default function Home() {
     <>
       <Navbar />
       <main className="flex flex-col items-center justify-center min-h-screen text-center p-6 sm:p-10 bg-gray-50">
-        {/* Hero Section */}
-        <section className="max-w-4xl mx-auto my-12 p-8 bg-white rounded-lg shadow-lg">
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-[#054160] leading-tight mb-4 animate-fade-in-down">
-            Goitsemodimo Gaone Mokgethi
-          </h1>
-          <p className="text-lg sm:text-xl text-gray-700 mt-4 font-semibold animate-fade-in-up">
-            Junior Software Developer | Full Stack Enthusiast | Techno Fairy
-          </p>
-          <p className="text-base text-gray-600 mt-6 max-w-2xl mx-auto animate-fade-in-up delay-100">
-            A motivated and results-driven developer with a strong foundation in frontend and backend development,
-            adept at building responsive and user-focused applications.
-          </p>
-          <div className="mt-8 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 animate-fade-in-up delay-200">
-            {/* "View My Projects" button styled to match "Get In Touch" */}
-            <Link href="/projects" className="px-6 py-2 border-2 border-cyan-500 text-cyan-500 text-base font-medium rounded-full shadow-lg hover:bg-cyan-500 hover:text-white transition duration-300 transform hover:scale-105">
-              View My Projects
-            </Link>
-            {/* "Get In Touch" button (already matching) */}
-            <Link href="/contact" className="px-6 py-2 border-2 border-cyan-500 text-cyan-500 text-base font-medium rounded-full shadow-lg hover:bg-cyan-500 hover:text-white transition duration-300 transform hover:scale-105">
-              Get In Touch
-            </Link>
-            {/* "Quick Connect" button styled to match "Get In Touch" */}
-            <button
-              onClick={openModal}
-              className="px-6 py-2 border-2 border-cyan-500 text-cyan-500 text-base font-medium rounded-full shadow-lg hover:bg-cyan-500 hover:text-white transition duration-300 transform hover:scale-105"
-            >
-              Quick Connect
-            </button>
+        {/* Hero Section with Photo */}
+        <section className="max-w-6xl mx-auto my-12 p-8 bg-white rounded-lg shadow-lg">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            {/* Profile Photo */}
+            <div className="flex justify-center md:order-1">
+              <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden shadow-2xl ring-4 ring-cyan-500 ring-offset-4">
+                <Image
+                  src="/profile-photo.jpg"
+                  alt="Goitsemodimo Gaone Mokgethi - Graduate Photo"
+                  fill
+                  sizes="(max-width: 640px) 256px, 320px"
+                  className="object-cover"
+                  priority
+                />
+              </div>
+            </div>
+
+            {/* Text Content */}
+            <div className="md:order-2 text-center md:text-left">
+              <h1 className="text-4xl sm:text-5xl font-extrabold text-[#054160] leading-tight mb-4 animate-fade-in-down">
+                Goitsemodimo Gaone Mokgethi
+              </h1>
+              <p className="text-lg sm:text-xl text-gray-700 mt-4 font-semibold animate-fade-in-up">
+                Junior Software Developer | Full Stack Enthusiast | Techno Fairy
+              </p>
+              <p className="text-base text-gray-600 mt-6 animate-fade-in-up delay-100">
+                A motivated and results-driven developer with a strong foundation in frontend and backend development,
+                adept at building responsive and user-focused applications.
+              </p>
+              <div className="mt-8 flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4 animate-fade-in-up delay-200">
+                <Link href="/projects" className="px-6 py-2 border-2 border-cyan-500 text-cyan-500 text-base font-medium rounded-full shadow-lg hover:bg-cyan-500 hover:text-white transition duration-300 transform hover:scale-105">
+                  View My Projects
+                </Link>
+                <Link href="/contact" className="px-6 py-2 border-2 border-cyan-500 text-cyan-500 text-base font-medium rounded-full shadow-lg hover:bg-cyan-500 hover:text-white transition duration-300 transform hover:scale-105">
+                  Get In Touch
+                </Link>
+                <button
+                  onClick={openModal}
+                  className="px-6 py-2 border-2 border-cyan-500 text-cyan-500 text-base font-medium rounded-full shadow-lg hover:bg-cyan-500 hover:text-white transition duration-300 transform hover:scale-105"
+                >
+                  Quick Connect
+                </button>
+              </div>
+            </div>
           </div>
         </section>
 

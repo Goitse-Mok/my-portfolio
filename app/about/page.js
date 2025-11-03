@@ -1,6 +1,7 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function About() {
   return (
@@ -8,6 +9,20 @@ export default function About() {
       <Navbar />
       <main className="bg-gray-50 py-12 px-6 sm:px-10 min-h-screen">
         <section className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8 space-y-8">
+
+          {/* Profile Photo Header */}
+          <div className="flex justify-center mb-8">
+            <div className="relative w-48 h-48 sm:w-56 sm:h-56 rounded-full overflow-hidden shadow-2xl ring-4 ring-cyan-500 ring-offset-4">
+              <Image
+                src="/profile-photo.jpg"
+                alt="Goitsemodimo Gaone Mokgethi"
+                fill
+                sizes="(max-width: 640px) 192px, 224px"
+                className="object-cover"
+                priority
+              />
+            </div>
+          </div>
 
           {/* About Me Introduction */}
           <div>
