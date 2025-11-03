@@ -11,8 +11,8 @@ export default function About() {
         <section className="max-w-5xl mx-auto bg-white rounded-2xl shadow-2xl p-8 md:p-12 space-y-10">
 
           {/* Profile Photo Header */}
-          <div className="flex justify-center mb-8">
-            <div className="relative w-64 h-80 sm:w-72 sm:h-96 rounded-2xl overflow-hidden shadow-2xl ring-4 ring-cyan-500 ring-offset-8 ring-offset-white transform hover:scale-105 transition-transform duration-300">
+          <div className="flex justify-center mb-8 animate-scale-in">
+            <div className="relative w-64 h-80 sm:w-72 sm:h-96 rounded-2xl overflow-hidden shadow-2xl ring-4 ring-cyan-500 ring-offset-8 ring-offset-white transform hover:scale-105 transition-transform duration-300 pulse-glow animate-float">
               <Image
                 src="/profile-photo.jpg"
                 alt="Goitsemodimo Gaone Mokgethi"
@@ -26,7 +26,7 @@ export default function About() {
           </div>
 
           {/* About Me Introduction */}
-          <div>
+          <div className="animate-fade-in-up delay-100">
             <h2 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-6 text-center">
               <span className="gradient-text">About Me</span>
             </h2>
@@ -47,7 +47,7 @@ export default function About() {
           </div>
 
           {/* Professional Summary */}
-          <div className="bg-gradient-to-br from-cyan-50 to-white p-6 md:p-8 rounded-xl border-l-4 border-cyan-500 shadow-md">
+          <div className="bg-gradient-to-br from-cyan-50 to-white p-6 md:p-8 rounded-xl border-l-4 border-cyan-500 shadow-md card-hover animate-slide-in-left delay-200">
             <h3 className="text-2xl sm:text-3xl font-bold mb-4">
               <span className="gradient-text">Professional Summary</span>
             </h3>
@@ -94,9 +94,9 @@ export default function About() {
               <span className="gradient-text">Work Experience</span>
             </h3>
             <div className="space-y-6">
-              <div className="bg-gradient-to-br from-cyan-50 to-white p-6 rounded-xl shadow-md border-l-4 border-cyan-500 card-hover">
+              <div className="bg-gradient-to-br from-cyan-50 to-white p-6 rounded-xl shadow-md border-l-4 border-cyan-500 card-hover animate-slide-in-right delay-100">
                 <div className="flex items-start gap-3 mb-3">
-                  <div className="text-2xl">💼</div>
+                  <div className="text-2xl animate-bounce-slow">💼</div>
                   <div>
                     <h4 className="font-bold text-cyan-700 text-xl">Junior Software Developer</h4>
                     <p className="text-gray-700 text-base font-semibold">Techno Fairy</p>
@@ -122,9 +122,9 @@ export default function About() {
                   </li>
                 </ul>
               </div>
-              <div className="bg-gradient-to-br from-gray-50 to-white p-6 rounded-xl shadow-md border-l-4 border-gray-400 card-hover">
+              <div className="bg-gradient-to-br from-gray-50 to-white p-6 rounded-xl shadow-md border-l-4 border-gray-400 card-hover animate-slide-in-right delay-300">
                 <div className="flex items-start gap-3 mb-3">
-                  <div className="text-2xl">🖥️</div>
+                  <div className="text-2xl animate-bounce-slow">🖥️</div>
                   <div>
                     <h4 className="font-bold text-gray-700 text-xl">IT Officer Attaché</h4>
                     <p className="text-gray-700 text-base font-semibold">Shashe River School</p>
