@@ -236,3 +236,17 @@ body {
 .delay-600 {
   animation-delay: 0.6s;
 }
+
+/* Fade in animation for modal */
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -59,30 +59,62 @@ export default function About() {
 
           {/* Technical Skills */}
           <div>
-            <h3 className="text-2xl sm:text-3xl font-bold text-cyan-600 mb-4">Technical Skills</h3>
+            <h3 className="text-2xl sm:text-3xl font-bold mb-6 text-center">
+              <span className="gradient-text">Technical Skills</span>
+            </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="bg-gray-100 p-4 rounded-md shadow-sm">
-                <h4 className="font-semibold text-cyan-700 mb-2 text-lg">Programming & Development</h4>
-                <ul className="list-disc list-inside text-gray-600 space-y-1 text-sm">
-                  <li>Frontend: HTML, CSS, Tailwind CSS, JavaScript, React.js, Next.js</li>
-                  <li>Backend: FastAPI (Python), Node.js, PHP, Java</li>
+              <div className="bg-gradient-to-br from-cyan-50 to-white p-6 rounded-xl shadow-md border-2 border-cyan-100 hover:border-cyan-300 card-hover animate-scale-in delay-100">
+                <div className="text-3xl mb-3 animate-bounce-slow">💻</div>
+                <h4 className="font-semibold text-cyan-700 mb-3 text-lg">Programming & Development</h4>
+                <ul className="space-y-2 text-gray-600 text-sm">
+                  <li className="flex items-start">
+                    <span className="text-cyan-500 mr-2 mt-1">✓</span>
+                    <span>Frontend: HTML, CSS, Tailwind CSS, JavaScript, React.js, Next.js</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-cyan-500 mr-2 mt-1">✓</span>
+                    <span>Backend: FastAPI (Python), Node.js, PHP, Java</span>
+                  </li>
                 </ul>
               </div>
-              <div className="bg-gray-100 p-4 rounded-md shadow-sm">
-                <h4 className="font-semibold text-cyan-700 mb-2 text-lg">Databases & Version Control</h4>
-                <ul className="list-disc list-inside text-gray-600 space-y-1 text-sm">
-                  <li>Databases: MySQL</li>
-                  <li>Version Control: Git & GitHub</li>
+              <div className="bg-gradient-to-br from-cyan-50 to-white p-6 rounded-xl shadow-md border-2 border-cyan-100 hover:border-cyan-300 card-hover animate-scale-in delay-250">
+                <div className="text-3xl mb-3 animate-bounce-slow">🗄️</div>
+                <h4 className="font-semibold text-cyan-700 mb-3 text-lg">Databases & Version Control</h4>
+                <ul className="space-y-2 text-gray-600 text-sm">
+                  <li className="flex items-start">
+                    <span className="text-cyan-500 mr-2 mt-1">✓</span>
+                    <span>Databases: MySQL</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-cyan-500 mr-2 mt-1">✓</span>
+                    <span>Version Control: Git & GitHub</span>
+                  </li>
                 </ul>
               </div>
-              <div className="bg-gray-100 p-4 rounded-md shadow-sm">
-                <h4 className="font-semibold text-cyan-700 mb-2 text-lg">Tools & General IT Skills</h4>
-                <ul className="list-disc list-inside text-gray-600 space-y-1 text-sm">
-                  <li>Microsoft Word, Excel</li>
-                  <li>Visual Studio Code (VS Code)</li>
-                  <li>Technical support for hardware/software issues</li>
-                  <li>Basic networking</li>
-                  <li>Class B Driver’s License</li>
+              <div className="bg-gradient-to-br from-cyan-50 to-white p-6 rounded-xl shadow-md border-2 border-cyan-100 hover:border-cyan-300 card-hover animate-scale-in delay-400">
+                <div className="text-3xl mb-3 animate-bounce-slow">🛠️</div>
+                <h4 className="font-semibold text-cyan-700 mb-3 text-lg">Tools & General IT Skills</h4>
+                <ul className="space-y-2 text-gray-600 text-sm">
+                  <li className="flex items-start">
+                    <span className="text-cyan-500 mr-2 mt-1">✓</span>
+                    <span>Microsoft Word, Excel</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-cyan-500 mr-2 mt-1">✓</span>
+                    <span>Visual Studio Code (VS Code)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-cyan-500 mr-2 mt-1">✓</span>
+                    <span>Technical support for hardware/software issues</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-cyan-500 mr-2 mt-1">✓</span>
+                    <span>Basic networking</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-cyan-500 mr-2 mt-1">✓</span>
+                    <span>Class B Driver's License</span>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -151,17 +183,29 @@ export default function About() {
 
           {/* Projects */}
           <div>
-            <h3 className="text-2xl sm:text-3xl font-bold text-cyan-600 mb-4">Projects</h3>
+            <h3 className="text-2xl sm:text-3xl font-bold mb-6 text-center">
+              <span className="gradient-text">Projects</span>
+            </h3>
             <div className="space-y-6">
-              <div className="bg-gray-100 p-4 rounded-md shadow-sm">
-                <h4 className="font-semibold text-cyan-700 text-lg">AI Health Coach (Hackathon Project)</h4>
+              <div className="bg-gradient-to-br from-cyan-50 to-white p-6 rounded-xl shadow-md border-2 border-cyan-100 hover:border-cyan-300 card-hover animate-scale-in delay-100">
+                <div className="flex items-start gap-3 mb-3">
+                  <div className="text-3xl animate-bounce-slow">🤖</div>
+                  <div>
+                    <h4 className="font-semibold text-cyan-700 text-lg">AI Health Coach (Hackathon Project)</h4>
+                  </div>
+                </div>
                 <p className="text-gray-600 mt-2 text-base">
                   Designed and prototyped an AI assistant to support physical and mental health wellness using
                   machine learning models and conversational UIs.
                 </p>
               </div>
-              <div className="bg-gray-100 p-4 rounded-md shadow-sm">
-                <h4 className="font-semibold text-cyan-700 text-lg">Real-Time e-Agriculture Knowledge Platform</h4>
+              <div className="bg-gradient-to-br from-cyan-50 to-white p-6 rounded-xl shadow-md border-2 border-cyan-100 hover:border-cyan-300 card-hover animate-scale-in delay-250">
+                <div className="flex items-start gap-3 mb-3">
+                  <div className="text-3xl animate-bounce-slow">🌾</div>
+                  <div>
+                    <h4 className="font-semibold text-cyan-700 text-lg">Real-Time e-Agriculture Knowledge Platform</h4>
+                  </div>
+                </div>
                 <p className="text-gray-600 mt-2 text-base">
                   Developing a data-driven platform for sustainability and productivity in agriculture using
                   real-time knowledge sharing solutions.
@@ -177,65 +221,95 @@ export default function About() {
 
           {/* Education & Certifications */}
           <div>
-            <h3 className="text-2xl sm:text-3xl font-bold text-cyan-600 mb-4">Education & Certifications</h3>
+            <h3 className="text-2xl sm:text-3xl font-bold mb-6 text-center">
+              <span className="gradient-text">Education & Certifications</span>
+            </h3>
             <div className="space-y-6">
-              <div className="bg-gray-100 p-4 rounded-md shadow-sm">
-                <h4 className="font-semibold text-cyan-700 text-lg">University of Botswana</h4>
-                <p className="text-gray-800 text-base">Bachelor of Science in Computing with Finance</p>
-                <p className="text-gray-600 text-base">Graduated: October 2024</p>
-                <p className="text-gray-600 text-base">CGPA: 3.3</p>
+              <div className="bg-gradient-to-br from-cyan-50 to-white p-6 rounded-xl shadow-md border-2 border-cyan-100 hover:border-cyan-300 card-hover animate-scale-in delay-100">
+                <div className="flex items-start gap-3 mb-3">
+                  <div className="text-3xl animate-bounce-slow">🎓</div>
+                  <div>
+                    <h4 className="font-semibold text-cyan-700 text-lg">University of Botswana</h4>
+                    <p className="text-gray-800 text-base">Bachelor of Science in Computing with Finance</p>
+                    <p className="text-gray-600 text-base">Graduated: October 2024</p>
+                    <p className="text-gray-600 text-base">CGPA: 3.3</p>
+                  </div>
+                </div>
               </div>
-              <div className="bg-gray-100 p-4 rounded-md shadow-sm">
-                <h4 className="font-semibold text-cyan-700 text-lg">St. Joseph’s College</h4>
-                <p className="text-gray-800 text-base">Botswana General Certificate of Secondary Education (BGCSE)</p>
-                <p className="text-gray-600 text-base">Year of Completion: 2018</p>
+              <div className="bg-gradient-to-br from-cyan-50 to-white p-6 rounded-xl shadow-md border-2 border-cyan-100 hover:border-cyan-300 card-hover animate-scale-in delay-250">
+                <div className="flex items-start gap-3 mb-3">
+                  <div className="text-3xl animate-bounce-slow">📚</div>
+                  <div>
+                    <h4 className="font-semibold text-cyan-700 text-lg">St. Joseph's College</h4>
+                    <p className="text-gray-800 text-base">Botswana General Certificate of Secondary Education (BGCSE)</p>
+                    <p className="text-gray-600 text-base">Year of Completion: 2018</p>
+                  </div>
+                </div>
               </div>
-              <div className="bg-gray-100 p-4 rounded-md shadow-sm">
-                <h4 className="font-semibold text-cyan-700 text-lg">Selected Participant – BTC Graduate Tech Cohort 2025</h4>
-                <ul className="list-disc list-inside text-gray-600 mt-2 space-y-1 text-sm">
-                  <li>Accepted into upcoming BTC cohort program focused on:</li>
-                  <li>ICT infrastructure and digital transformation</li>
-                  <li>Software development best practices</li>
-                  <li>Mentorship and professional growth opportunities</li>
-                </ul>
+              <div className="bg-gradient-to-br from-cyan-50 to-white p-6 rounded-xl shadow-md border-2 border-cyan-100 hover:border-cyan-300 card-hover animate-scale-in delay-400">
+                <div className="flex items-start gap-3 mb-3">
+                  <div className="text-3xl animate-bounce-slow">🚀</div>
+                  <div>
+                    <h4 className="font-semibold text-cyan-700 text-lg">Selected Participant – BTC Graduate Tech Cohort 2025</h4>
+                    <ul className="list-disc list-inside text-gray-600 mt-2 space-y-1 text-sm">
+                      <li>Accepted into upcoming BTC cohort program focused on:</li>
+                      <li>ICT infrastructure and digital transformation</li>
+                      <li>Software development best practices</li>
+                      <li>Mentorship and professional growth opportunities</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-              <div className="bg-gray-100 p-4 rounded-md shadow-sm">
-                <h4 className="font-semibold text-cyan-700 text-lg">Cybersecurity Technician Short Course</h4>
-                <p className="text-gray-600 text-base">Currently pursuing to enhance cybersecurity knowledge and skills.</p>
+              <div className="bg-gradient-to-br from-cyan-50 to-white p-6 rounded-xl shadow-md border-2 border-cyan-100 hover:border-cyan-300 card-hover animate-scale-in delay-500">
+                <div className="flex items-start gap-3 mb-3">
+                  <div className="text-3xl animate-bounce-slow">🔐</div>
+                  <div>
+                    <h4 className="font-semibold text-cyan-700 text-lg">Cybersecurity Technician Short Course</h4>
+                    <p className="text-gray-600 text-base">Currently pursuing to enhance cybersecurity knowledge and skills.</p>
+                  </div>
+                </div>
               </div>
 
               {/* NEW CERTIFICATIONS WITH LINKS */}
-              <div className="bg-gray-100 p-4 rounded-md shadow-sm">
-                <h4 className="font-semibold text-cyan-700 text-lg">Getting Started with Azure DevOps Boards</h4>
-                <p className="text-gray-800 text-base">Coursera Project Network</p>
-                <p className="text-gray-600 text-base">Issued: August 2024</p>
-                <p className="text-gray-600 text-base mb-2">Credential ID: HHDNXEYCUKXP</p>
-                <Link
-                  href="https://www.coursera.org/account/accomplishments/verify/HHDNXEYCUKXP"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-cyan-500 hover:underline text-sm flex items-center"
-                >
-                  Show Credential
-                  {/* External link icon */}
-                  <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                </Link>
+              <div className="bg-gradient-to-br from-cyan-50 to-white p-6 rounded-xl shadow-md border-2 border-cyan-100 hover:border-cyan-300 card-hover animate-scale-in delay-600">
+                <div className="flex items-start gap-3 mb-3">
+                  <div className="text-3xl animate-bounce-slow">📜</div>
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-cyan-700 text-lg">Getting Started with Azure DevOps Boards</h4>
+                    <p className="text-gray-800 text-base">Coursera Project Network</p>
+                    <p className="text-gray-600 text-base">Issued: August 2024</p>
+                    <p className="text-gray-600 text-base mb-2">Credential ID: HHDNXEYCUKXP</p>
+                    <Link
+                      href="https://www.coursera.org/account/accomplishments/verify/HHDNXEYCUKXP"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-cyan-500 hover:underline text-sm flex items-center"
+                    >
+                      Show Credential
+                      <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                    </Link>
+                  </div>
+                </div>
               </div>
-              <div className="bg-gray-100 p-4 rounded-md shadow-sm">
-                <h4 className="font-semibold text-cyan-700 text-lg">Linux: I/O Redirection for DevOps</h4>
-                <p className="text-gray-800 text-base">Coursera Project Network</p>
-                <p className="text-gray-600 text-base">Issued: August 2024</p>
-                <p className="text-gray-600 text-base mb-2">Credential ID: Y6RHET0D7MKZ</p>
-                <Link
-                  href="https://www.coursera.org/account/accomplishments/verify/Y6RHET0D7MKZ"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-cyan-500 hover:underline text-sm flex items-center"
-                >
-                  Show Credential
-                  {/* External link icon */}
-                  <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                </Link>
+              <div className="bg-gradient-to-br from-cyan-50 to-white p-6 rounded-xl shadow-md border-2 border-cyan-100 hover:border-cyan-300 card-hover animate-scale-in delay-600">
+                <div className="flex items-start gap-3 mb-3">
+                  <div className="text-3xl animate-bounce-slow">📜</div>
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-cyan-700 text-lg">Linux: I/O Redirection for DevOps</h4>
+                    <p className="text-gray-800 text-base">Coursera Project Network</p>
+                    <p className="text-gray-600 text-base">Issued: August 2024</p>
+                    <p className="text-gray-600 text-base mb-2">Credential ID: Y6RHET0D7MKZ</p>
+                    <Link
+                      href="https://www.coursera.org/account/accomplishments/verify/Y6RHET0D7MKZ"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-cyan-500 hover:underline text-sm flex items-center"
+                    >
+                      Show Credential
+                      <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                    </Link>
+                  </div>
+                </div>
               </div>
               {/* END NEW CERTIFICATIONS */}
 
@@ -244,14 +318,46 @@ export default function About() {
 
           {/* Soft Skills */}
           <div>
-            <h3 className="text-2xl sm:text-3xl font-bold text-cyan-600 mb-4">Soft Skills</h3>
+            <h3 className="text-2xl sm:text-3xl font-bold mb-6 text-center">
+              <span className="gradient-text">Soft Skills</span>
+            </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-              <div className="bg-gray-100 p-4 rounded-md shadow-sm text-gray-700 text-base">Excellent written and verbal communication</div>
-              <div className="bg-gray-100 p-4 rounded-md shadow-sm text-gray-700 text-base">Strong teamwork and collaboration</div>
-              <div className="bg-gray-100 p-4 rounded-md shadow-sm text-gray-700 text-base">Critical and creative thinking</div>
-              <div className="bg-gray-100 p-4 rounded-md shadow-sm text-gray-700 text-base">Time management and prioritization</div>
-              <div className="bg-gray-100 p-4 rounded-md shadow-sm text-gray-700 text-base">High integrity and work ethic</div>
-              <div className="bg-gray-100 p-4 rounded-md shadow-sm text-gray-700 text-base">Fast learner with a strong desire to improve</div>
+              <div className="bg-gradient-to-br from-cyan-50 to-white p-6 rounded-xl shadow-md border-2 border-cyan-100 hover:border-cyan-300 card-hover animate-scale-in delay-100">
+                <div className="flex items-start gap-2 mb-2">
+                  <div className="text-2xl animate-bounce-slow">💬</div>
+                  <div className="text-gray-700 text-base">Excellent written and verbal communication</div>
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-cyan-50 to-white p-6 rounded-xl shadow-md border-2 border-cyan-100 hover:border-cyan-300 card-hover animate-scale-in delay-250">
+                <div className="flex items-start gap-2 mb-2">
+                  <div className="text-2xl animate-bounce-slow">🤝</div>
+                  <div className="text-gray-700 text-base">Strong teamwork and collaboration</div>
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-cyan-50 to-white p-6 rounded-xl shadow-md border-2 border-cyan-100 hover:border-cyan-300 card-hover animate-scale-in delay-400">
+                <div className="flex items-start gap-2 mb-2">
+                  <div className="text-2xl animate-bounce-slow">💡</div>
+                  <div className="text-gray-700 text-base">Critical and creative thinking</div>
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-cyan-50 to-white p-6 rounded-xl shadow-md border-2 border-cyan-100 hover:border-cyan-300 card-hover animate-scale-in delay-500">
+                <div className="flex items-start gap-2 mb-2">
+                  <div className="text-2xl animate-bounce-slow">⏰</div>
+                  <div className="text-gray-700 text-base">Time management and prioritization</div>
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-cyan-50 to-white p-6 rounded-xl shadow-md border-2 border-cyan-100 hover:border-cyan-300 card-hover animate-scale-in delay-600">
+                <div className="flex items-start gap-2 mb-2">
+                  <div className="text-2xl animate-bounce-slow">⭐</div>
+                  <div className="text-gray-700 text-base">High integrity and work ethic</div>
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-cyan-50 to-white p-6 rounded-xl shadow-md border-2 border-cyan-100 hover:border-cyan-300 card-hover animate-scale-in delay-600">
+                <div className="flex items-start gap-2 mb-2">
+                  <div className="text-2xl animate-bounce-slow">📈</div>
+                  <div className="text-gray-700 text-base">Fast learner with a strong desire to improve</div>
+                </div>
+              </div>
             </div>
           </div>
 
