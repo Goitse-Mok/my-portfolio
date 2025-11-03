@@ -2,15 +2,16 @@
 
 ## Overview
 
-This is a personal portfolio website for Goitsemodimo Gaone Mokgethi, a frontend and backend developer at Techno Fairy. The site showcases professional information, technical skills, projects, and contact details with a vibrant "woman in tech" design aesthetic featuring pink, purple, and fuchsia gradients, 3D animations, and modern visual effects. Built with modern web technologies, it serves as a digital resume and professional online presence.
+This is a personal portfolio website for Goitsemodimo Gaone Mokgethi, a frontend and backend developer at Techno Fairy. The site showcases professional information, technical skills, projects, and contact details with a professional navy blue design aesthetic featuring subtle gradients, 3D animations, and modern visual effects. Built with modern web technologies, it serves as a digital resume and professional online presence.
 
 ## Recent Changes (November 3, 2025)
 
-**Complete Portfolio Transformation - Modern "Woman in Tech" Design**: Vibrant color overhaul with 3D animations and professional rebranding
-- **Vibrant Color Scheme**: Completely replaced all cyan/blue colors with vibrant pink, purple, magenta, and fuchsia gradients throughout the entire portfolio
+**Complete Portfolio Transformation - Professional Corporate Design**: Navy blue color scheme with 3D animations and professional rebranding
+- **Professional Color Scheme**: Navy blue, slate, and gray neutral tones for a corporate, professional aesthetic
+- **Compact Navbar**: Reduced navbar size (smaller padding, logo, and text) for a sleek, modern look
 - **Job Title Update**: Changed from "Junior Software Developer" to "Frontend and Backend Developer" across all pages
-- **New 3D Logo**: Generated and integrated modern "GGM" logo with pink-purple-fuchsia gradient, replacing previous logo
-- **3D Animations**: Added comprehensive 3D CSS animations (rotate3D, flipIn, tilt3D) with perspective effects throughout
+- **New 3D Logo**: Generated and integrated modern "GGM" logo, replacing previous logo
+- **3D Animations**: Comprehensive 3D CSS animations (rotate3D, flipIn, tilt3D) with perspective effects throughout
 
 **Migration to Replit**: Successfully migrated project from Vercel to Replit environment
 - Updated package.json scripts to bind to 0.0.0.0:5000 for Replit compatibility
@@ -24,17 +25,17 @@ This is a personal portfolio website for Goitsemodimo Gaone Mokgethi, a frontend
 - All images optimized using Next.js Image component with proper `fill`, `sizes`, and `priority` props
 - Photo file: `/public/profile-photo.jpg`
 
-**Design System - Vibrant Theme with 3D Effects**: Implemented comprehensive animation and color system
-- **Vibrant Colors**: Pink (#ec4899), Purple (#a855f7), Fuchsia (#d946ef), Magenta accents
-- **Navbar**: Gradient from pink-600 via purple-600 to fuchsia-600 with shadow effects
-- **Photo Effects**: Dual-color pink-purple pulsing glow, 3D tilt animation, floating effect, hover scale transforms
+**Design System - Professional Theme with 3D Effects**: Implemented comprehensive animation and color system
+- **Professional Colors**: Navy Blue (#1e3a8a, #3b82f6), Slate (#64748b), Gray (#6b7280) for corporate aesthetic
+- **Compact Navbar**: Gradient from navy-800 via blue-800 to blue-700, reduced padding (py-2), smaller logo and text
+- **Photo Effects**: Dual-color navy-blue pulsing glow, 3D tilt animation, floating effect, hover scale transforms
 - **3D CSS Animations**: rotate3D (20s continuous rotation), flipIn (3D flip entrance), tilt3D (subtle 3D perspective tilt)
-- **Button Animations**: Shimmer effect on hover, 1.1x scale transform, rotate-2 tilt effects, vibrant pink-purple-fuchsia gradients
-- **Card Animations**: Staggered flip-in entrance animations (3D effect), perspective-card with rotateX(5deg) on hover, pink-purple glow shadows
-- **Gradient Text**: Pink-purple-violet gradient on ALL major headings (About Me, My Expertise, Technical Skills, Work Experience, Projects, Education, Soft Skills)
-- **Hero Names**: "Goitsemodimo" in pink-purple gradient, "Gaone Mokgethi" in purple-fuchsia gradient
-- **Card Backgrounds**: Alternating gradients from pink-50, purple-50, and fuchsia-50 to white for visual variety
-- **Modern Aesthetics**: Vibrant gradient backgrounds, enhanced borders, pink-purple glow effects, contemporary color scheme
+- **Button Animations**: Shimmer effect on hover, 1.1x scale transform, rotate-2 tilt effects, professional blue gradients
+- **Card Animations**: Staggered flip-in entrance animations (3D effect), perspective-card with rotateX(5deg) on hover, navy blue glow shadows
+- **Gradient Text**: Navy blue gradient on ALL major headings (About Me, My Expertise, Technical Skills, Work Experience, Projects, Education, Soft Skills)
+- **Hero Names**: "Goitsemodimo" in blue gradient, "Gaone Mokgethi" in slate-gray gradient
+- **Card Backgrounds**: Alternating gradients from blue-50, slate-50, and gray-50 to white for visual variety
+- **Modern Aesthetics**: Professional gradient backgrounds, subtle borders, navy blue glow effects, corporate color scheme
 - **Performance Optimized**: Smooth 60fps animations, efficient CSS transforms, no layout shift issues
 
 ## User Preferences
