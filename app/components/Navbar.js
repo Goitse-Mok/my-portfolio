@@ -8,15 +8,15 @@ export default function Navbar() {
   const pathname = usePathname(); // Get the current path
 
   return (
-    <nav className="bg-gradient-to-r from-pink-600 via-purple-600 to-fuchsia-600 text-white px-8 py-4 flex justify-between items-center sticky top-0 z-50 shadow-lg">
+    <nav className="bg-gradient-to-r from-[#1e3a8a] via-[#1e40af] to-[#2563eb] text-white px-6 py-2 flex justify-between items-center sticky top-0 z-50 shadow-lg">
       {/* Wrapper div for the circular ring effect */}
-      <div className="relative flex items-center justify-center w-20 h-20 rounded-full bg-white/10 backdrop-blur-sm ring-2 ring-pink-300 ring-offset-2 ring-offset-purple-600 transition-all duration-300 hover:ring-offset-4 hover:ring-pink-200 overflow-hidden animate-tilt-3d">
+      <div className="relative flex items-center justify-center w-14 h-14 rounded-full bg-white/10 backdrop-blur-sm ring-2 ring-blue-300 ring-offset-2 ring-offset-blue-800 transition-all duration-300 hover:ring-offset-3 hover:ring-blue-200 overflow-hidden animate-tilt-3d">
         <Image
-          src="/logo2.png" // Make sure your logo2.png is in the public folder
+          src="/logo2.png"
           alt="Goitsemodimo Company Logo"
-          width={100} // Retaining original width to ensure logo visibility
-          height={30}  // Retaining original height
-          className="object-contain" // Ensures the entire image fits within its bounds
+          width={70}
+          height={25}
+          className="object-contain"
           priority
         />
       </div>
@@ -25,8 +25,8 @@ export default function Navbar() {
         <Link
           href="/"
           className={`
-            ${pathname === '/' ? 'font-bold text-pink-200 underline decoration-2 underline-offset-4' : 'text-white'}
-            hover:text-pink-200 hover:scale-110 transition-all duration-300 text-lg
+            ${pathname === '/' ? 'font-bold text-blue-200 underline decoration-2 underline-offset-4' : 'text-white'}
+            hover:text-blue-200 hover:scale-110 transition-all duration-300 text-base
           `}
         >
           Home
@@ -34,8 +34,8 @@ export default function Navbar() {
         <Link
           href="/about"
           className={`
-            ${pathname === '/about' ? 'font-bold text-pink-200 underline decoration-2 underline-offset-4' : 'text-white'}
-            hover:text-pink-200 hover:scale-110 transition-all duration-300 text-lg
+            ${pathname === '/about' ? 'font-bold text-blue-200 underline decoration-2 underline-offset-4' : 'text-white'}
+            hover:text-blue-200 hover:scale-110 transition-all duration-300 text-base
           `}
         >
           About
@@ -43,8 +43,8 @@ export default function Navbar() {
         <Link
           href="/projects"
           className={`
-            ${pathname === '/projects' ? 'font-bold text-pink-200 underline decoration-2 underline-offset-4' : 'text-white'}
-            hover:text-pink-200 hover:scale-110 transition-all duration-300 text-lg
+            ${pathname === '/projects' ? 'font-bold text-blue-200 underline decoration-2 underline-offset-4' : 'text-white'}
+            hover:text-blue-200 hover:scale-110 transition-all duration-300 text-base
           `}
         >
           Projects
@@ -52,8 +52,8 @@ export default function Navbar() {
         <Link
           href="/contact"
           className={`
-            ${pathname === '/contact' ? 'font-bold text-pink-200 underline decoration-2 underline-offset-4' : 'text-white'}
-            hover:text-pink-200 hover:scale-110 transition-all duration-300 text-lg
+            ${pathname === '/contact' ? 'font-bold text-blue-200 underline decoration-2 underline-offset-4' : 'text-white'}
+            hover:text-blue-200 hover:scale-110 transition-all duration-300 text-base
           `}
         >
           Contact

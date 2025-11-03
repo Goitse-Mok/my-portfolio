@@ -100,7 +100,7 @@ body {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #ec4899 0%, #a855f7 50%, #8b5cf6 100%);
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #60a5fa 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -112,7 +112,7 @@ body {
 
 .card-hover:hover {
   transform: translateY(-8px) rotateX(5deg);
-  box-shadow: 0 20px 40px rgba(236, 72, 153, 0.3);
+  box-shadow: 0 20px 40px rgba(30, 58, 138, 0.3);
 }
 
 /* Shimmer effect for buttons */
@@ -137,10 +137,10 @@ body {
 /* Pulse glow effect */
 @keyframes pulseGlow {
   0%, 100% {
-    box-shadow: 0 0 25px rgba(236, 72, 153, 0.6), 0 0 50px rgba(168, 85, 247, 0.4);
+    box-shadow: 0 0 25px rgba(30, 58, 138, 0.5), 0 0 50px rgba(59, 130, 246, 0.3);
   }
   50% {
-    box-shadow: 0 0 45px rgba(236, 72, 153, 0.9), 0 0 70px rgba(168, 85, 247, 0.6);
+    box-shadow: 0 0 45px rgba(30, 58, 138, 0.7), 0 0 70px rgba(59, 130, 246, 0.5);
   }
 }
 
