@@ -1,6 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
-import { setCookie, getCookie } from '../../../utils/cookie';
+import { setCookie, getCookie } from 'cookies-next';
 
 export default function UploadCVPage() {
   const [file, setFile] = useState(null);
