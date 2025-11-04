@@ -17,6 +17,17 @@
 /.next/
 /out/
 
+# Node & Next.js
+node_modules
+.next
+.env
+.env.local
+.DS_Store
+
+# Replit junk
+.local/
+.replit/
+
 # production
 /build
 
