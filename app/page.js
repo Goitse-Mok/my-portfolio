@@ -148,7 +148,7 @@ export default function Home() {
             >
               &times;
             </button>
-            <h3 className="text-3xl font-bold bg-gradient-to-r from-blue-700 to-blue-800 bg-clip-text text-transparent mb-4 text-center">Let's Connect!</h3>
+            <h3 className="text-3xl font-bold bg-gradient-to-r from-blue-700 to-blue-800 bg-clip-text text-transparent mb-4 text-center">Let&apos;s Connect!</h3>
             <p className="text-lg text-gray-700 text-center mb-6">
               I&apos;d love to hear from you. Feel free to reach out directly:
             </p>

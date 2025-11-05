@@ -113,7 +113,7 @@ export default function About() {
                   </li>
                   <li className="flex items-start">
                     <span className="text-gray-600 mr-2 mt-1">✓</span>
-                    <span>Class B Driver's License</span>
+                    <span>Class B Driver&apos;s License</span>
                   </li>
                 </ul>
               </div>
@@ -240,7 +240,7 @@ export default function About() {
                 <div className="flex items-start gap-3 mb-3">
                   <div className="text-3xl animate-bounce-slow">📚</div>
                   <div>
-                    <h4 className="font-semibold text-slate-700 text-lg">St. Joseph's College</h4>
+                    <h4 className="font-semibold text-slate-700 text-lg">St. Joseph&apos;s College</h4>
                     <p className="text-gray-800 text-base">Botswana General Certificate of Secondary Education (BGCSE)</p>
                     <p className="text-gray-600 text-base">Year of Completion: 2018</p>
                   </div>
